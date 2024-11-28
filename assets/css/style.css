@@ -113,13 +113,14 @@
 
 html,
 body {
+  color: var(--white);
   font-family: var(--font-400);
 }
 
 a {
   text-decoration: none;
   transition: 0.3s ease 0s;
-  color: var(--black);
+  color: var(--white);
 }
 
 a:hover {
@@ -228,7 +229,7 @@ body {
   font-size: 15px;
   background: #041719;
   line-height: 1.5;
-  color: #6a7382;
+  color: var(--white);
   font-weight: 300;
 }
 
@@ -238,15 +239,13 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 15px;
-  color: var(--black);
-  margin-top: 0;
+  color: var(--white);
   line-height: 1.5;
+  margin: 0;
 }
 
 p {
-  margin-bottom: 15px;
-  color: #6a7382;
+  color: #dcdcdc;
 }
 
 /* Navbar */
@@ -385,7 +384,7 @@ header.sticky {
   position: fixed;
   width: 100%;
   z-index: 999;
-  background: var(--black);
+  background: #041d1f;
 }
 
 header.sticky #navbarNav {
@@ -991,12 +990,11 @@ ul.navbar-nav {
 .hero-section {
   background-image: url("../images/hero-section.png");
   background-attachment: fixed;
-  padding-top: 170px !important;
+  padding-top: 190px !important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 80px !important;
-
 }
 
 .hero-section-content>* {
@@ -1061,17 +1059,90 @@ img.hero-hand-arrow-img {
   height: 510px;
 }
 
-[data-scroll-container] {
-  overflow: hidden;
+/* end */
+
+
+/* Count-start */
+.count-card-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-[data-scroll-section] {
-  padding: 50px;
+.count-main {
+  padding: 50px 40px;
+  background: #051A1D;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: -100px;
+  margin-top: -140px;
+  z-index: 8;
+  position: relative;
+  padding-right: 110px;
+  /* padding-bottom: 81px; */
+  flex-direction: column;
+  display: flex;
+  gap: 59px;
+  z-index: 8;
 }
 
-[data-scroll-sticky] {
-  position: sticky;
-  top: 10%;
+.count-card {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 30px 47px;
+  background: #04171A;
+  position: relative;
 }
 
 /* end */
+
+.count-card .icon {
+  position: absolute;
+  bottom: -20px;
+  height: 40px;
+  width: 40px;
+  background: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  left: 32px;
+}
+
+.world-img {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.count-number-main {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  /* background: #04171a; */
+  position: relative;
+  z-index: 5;
+  gap: 50px;
+}
+
+.count-number-main .number {
+  flex: 1;
+  background: #04171a;
+  padding: 20px;
+}
+
+
+.count-number-main .number h4 span {
+  font-size: 30px;
+  color: white;
+}
+
+.count-number-main .number h4 {
+  color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: var(--font-700);
+}
