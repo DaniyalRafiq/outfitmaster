@@ -91,7 +91,7 @@
   --font-man-800: Manrope-ExtraBold;
 
   --motion-ease: cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  --motion-duration: 0.3s;
+  --motion-duration: 0.4s;
 
   --primary: #80011F;
   --primary-light: #6d1b2e;
@@ -194,6 +194,7 @@ textarea {
   width: 100%;
   object-fit: contain;
   transition: 0.3s;
+
 }
 
 .img-box-content img {
@@ -246,6 +247,7 @@ h6 {
 
 p {
   color: #dcdcdc;
+  margin: 0;
 }
 
 /* Navbar */
@@ -575,20 +577,19 @@ input::-webkit-inner-spin-button {
 .footer {
   padding-top: 35px;
   padding-bottom: 25px;
-  background: var(--black);
+
+  background: #012025;
 }
 
 .footer-logo p {
-  color: var(--white);
-  margin-top: 20px;
+  color: #627174;
   font-size: 1rem;
+  margin: 0;
 }
 
 .footer-links>h6 {
-  color: var(--primary);
-  font-size: 1.2rem;
-  margin-bottom: 0;
-  margin-top: 20px;
+  font-size: 25px;
+  color: var(--white);
 }
 
 .footer-links>p {
@@ -599,14 +600,20 @@ input::-webkit-inner-spin-button {
 }
 
 .footer-links>ul {
-  padding-left: 18px;
+  margin: 0;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .footer-links>ul>li {
-  padding: 20px 0px 0 0px;
+  /* padding: 20px 0px 0 0px; */
   list-style-type: disclosure-closed;
   color: var(--white);
   transition: all ease-in-out 0.3s;
+  list-style: none;
 }
 
 .footer-links>ul>li:hover {
@@ -615,14 +622,14 @@ input::-webkit-inner-spin-button {
 
 .footer-links>ul>li>a {
   text-decoration: none;
-  font-size: 1rem;
-  color: var(--white);
+  font-size: 16px;
+  color: #627174;
   font-weight: 400;
   transition: all ease-in-out 0.3s;
 }
 
 .footer-links>ul>li>a:hover {
-  color: var(--primary);
+  color: var(--white);
 }
 
 .social>p>span {
@@ -1021,6 +1028,7 @@ ul.navbar-nav {
   background-size: cover;
   padding-bottom: 80px !important;
 }
+
 img.hero-hand-arrow-img.aos-init.aos-animate {
   display: flex;
 }
@@ -1031,6 +1039,7 @@ img.hero-hand-arrow-img.aos-init.aos-animate {
   object-fit: contain;
   left: -30px;
 }
+
 .hero-section-content>* {
   margin: 0;
 }
@@ -1354,10 +1363,151 @@ section.count-section {
   height: 100%;
   background: linear-gradient(0deg, #04171A 0%, #80011F 100%);
 }
+
 .agency-img-main img {
   width: 100%;
-}.agency-img-main {
-    position: relative;
-    z-index: 55;
 }
+
+.agency-img-main {
+  position: relative;
+  z-index: 55;
+}
+
+.footer-logo {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.social-media-main {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 17px;
+
+}
+
+.social-media:after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--primary);
+  height: 0;
+  border-radius: 17px;
+  width: 0;
+  transition: .3s;
+}
+
+.social-media i {
+  z-index: 4;
+  color: var(--white);
+}
+
+.social-media:hover:after {
+  height: 110%;
+  width: 110%;
+}
+
+.footer-links>ul>li i {
+  margin-right: 5px;
+  color: var(--primary);
+}
+
+.footer-bootom-links {
+  text-align: center;
+
+  span {
+
+    color: #627174;
+  }
+
+  a {
+    color: #627174;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+.our-services-heading {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.our-services-heading h4 {
+  font-size: 40px;
+  font-family: var(--font-700);
+}
+
+.our-services-card {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  gap: 15px;
+  margin-bottom: 20px;
+  background: #051C20;
+  
+  
+}
+  
+
+.our-services-img-main {
+  padding: 15px;
+  background: gray;
+  background: #052228;
+
+
+}
+
+.service-btn {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background: #011316;
+}
+
+.service-btn:hover {
+  background: var(--primary);
+  color: white;
+}
+
+
+.our-services-card img{
+  transition: .6s ease-in-out   ;
+}
+.our-services-card:hover img {
+  transform: translateY(-4px) rotate3d(45, 0, 0, -35deg);
+  filter: drop-shadow(0px 15px 0px rgba(102, 102, 102, 0.5));
+}
+
+.our-services-img.img-box {
+  height: 360px;
+}
+
 /* Agency End */
