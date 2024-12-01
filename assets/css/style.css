@@ -1390,14 +1390,13 @@ section.count-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   border: 2px solid var(--primary);
   border-radius: 50%;
   position: relative;
   overflow: hidden;
   border-radius: 17px;
-
 }
 
 .social-media:after {
@@ -1472,10 +1471,10 @@ section.count-section {
   gap: 15px;
   margin-bottom: 20px;
   background: #051C20;
-  
-  
+
+
 }
-  
+
 
 .our-services-img-main {
   padding: 15px;
@@ -1498,9 +1497,10 @@ section.count-section {
 }
 
 
-.our-services-card img{
-  transition: .6s ease-in-out   ;
+.our-services-card img {
+  transition: .6s ease-in-out;
 }
+
 .our-services-card:hover img {
   transform: translateY(-4px) rotate3d(45, 0, 0, -35deg);
   filter: drop-shadow(0px 15px 0px rgba(102, 102, 102, 0.5));
@@ -1510,4 +1510,132 @@ section.count-section {
   height: 360px;
 }
 
+.our-team-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  gap: 6px;
+}
+
+.our-team-heading h4 {
+  font-size: 40px;
+  font-family: var(--font-700);
+}
+
+.team-card-content {
+  margin: 0 20px;
+  background: #051C1F;
+  padding: 30px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  margin-top: -60px;
+  z-index: 44;
+  position: relative;
+}
+
+.team-card-content h4 {
+  line-height: 0.9;
+}
+
+.team-card-content .social-media-main {
+  gap: 7px;
+}
+
+.team-card-content span {
+  color: #627174;
+}
+
 /* Agency End */
+
+/* Cover  */
+.cover {
+  height: 500px;
+  background-image: url(../images/cover-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.cover-content {
+  position: absolute;
+  width: 100%;
+  max-width: 410px;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  right: 13%;
+  bottom: 0;
+  padding: 40px;
+  background: #042023;
+  opacity: 0.85;
+}
+
+.cover-content h4 {
+  font-size: 31px;
+  text-transform: capitalize;
+  font-family: var(--font-600);
+}
+
+.cover-content p {
+  line-height: 2;
+}
+
+/* Cover End */
+
+/* Portolio */
+/* Settings start */
+.justified-grid-gallery {
+  --space: 4px;
+  --min-height: 190px;
+  --last-row-background: rgb(188 234 153);
+}
+
+/* Settings end */
+
+.justified-grid-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: var(--space);
+  list-style: none;
+  margin: 0 !important;
+  /* We use !important to avoid gaps in some environments. */
+  padding: 0 !important;
+  /* We use !important to avoid gaps in some environments. */
+}
+
+.justified-grid-gallery>* {
+  flex-grow: calc(var(--width) * (100000 / var(--height)));
+  flex-basis: calc(var(--min-height) * (var(--width) / var(--height)));
+  aspect-ratio: var(--width) / var(--height);
+  position: relative;
+  overflow: hidden;
+  margin: 0 !important;
+  /* We use !important to avoid gaps in some environments. */
+  padding: 0 !important;
+  /* We use !important to avoid gaps in some environments. */
+}
+
+.justified-grid-gallery>*>img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.justified-grid-gallery{
+
+}
+
+
+/* Portolio End */
