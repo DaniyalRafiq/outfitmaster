@@ -1,0 +1,89 @@
+/* For Google Chrome (125% zoom level) */
+@media screen and (-webkit-min-device-pixel-ratio: 1.25),
+screen and (min-resolution: 120dpi) {}
+
+@media (min-width: 1280px) and (max-width: 1366px) {}
+
+@media (max-width:991px) {
+  .count-card-main {
+    flex-wrap: wrap;
+    gap: 40px 23px;
+  }
+
+  .count-main {
+    margin: 0;
+  }
+
+  .hero-section-image-main {
+    display: none;
+  }
+
+  .hero-section-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .agency-heading-content {
+    /* margin-top: 30px; */
+    align-items: center;
+    text-align: center;
+  }
+
+  .agency-content {
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .team-card {
+    margin-top: 30px;
+  }
+
+  .testimonial-card {
+    margin-bottom: 20px;
+  }
+
+  .contact-us-img.img-box {
+    display: none;
+  }
+
+  .footer-logo {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer .animate-zoom {
+    display: none;
+  }
+
+  .footer-logo {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer-links.m-mt-40 {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .footer-links>ul {
+    align-items: center;
+    text-align: center;
+  }
+
+  .count-number-main {
+    margin: 0 auto;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+@media (min-width: 320px) and (max-width: 767px) {}
